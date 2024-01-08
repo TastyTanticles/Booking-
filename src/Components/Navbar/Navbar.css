@@ -1,0 +1,52 @@
+
+@media screen and (max-width: 768px) {
+    .nav-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 70px; /* Adjust the value based on your design */
+      left: 0;
+      right: 0;
+      background-color: #fff; /* Change to your desired background color */
+      z-index: 1000;
+      padding-top: 20px;
+      transition: transform 0.3s ease-in-out;
+      transform: translateY(-100%);
+    }
+  
+    .nav-mobile.active {
+      transform: translateY(0);
+    }
+  
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin-bottom: 5px;
+      background-color: #333; /* Change to your desired color */
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+  
+    .search-user-icons {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin-top: 20px;
+    }
+  
+    .search-bar {
+      width: 60%;
+    }
+  
+    .user-icon {
+      width: 20%;
+    }
+  }
+  
